@@ -1,21 +1,20 @@
 {
-  "name": "hello-koa",
+  "name": "url-koa",
   "version": "1.0.0",
-  "description": "a koa demo",
+  "description": "http request(get post put delete)",
   "main": "app.js",
   "dependencies": {
+    "koa": "^2.5.3",
+    "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0"
   },
-  "devDependencies": {
-    "koa": "^2.5.3"
-  },
+  "devDependencies": {},
   "scripts": {
-    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "node",
-    "koa"
+    "koa",
+    "url"
   ],
   "author": "Lee",
   "license": "ISC"
