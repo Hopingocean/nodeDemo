@@ -1,0 +1,19 @@
+{
+  "name": "use-nunjucks",
+  "version": "1.0.0",
+  "description": "nunjucks 模板引擎",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "koa",
+    "nunjucks"
+  ],
+  "author": "Lee",
+  "license": "ISC",
+  "dependencies": {
+    "nunjucks": "^3.1.7"
+  }
+}

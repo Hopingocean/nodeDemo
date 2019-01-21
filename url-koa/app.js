@@ -5,7 +5,7 @@ const bodyParser = require('koa-bodyparser');
 
 const app = new Koa();
 
-app.use(bodyParser);
+app.use(bodyParser());
 
 // log request URL
 app.use(async (ctx, next) => {

@@ -19,7 +19,23 @@ var fn_signin = async (ctx, next) => {
   }
 };
 
+var login = async (ctx, next) => {
+  var email = ctx.request.body.email || '',
+    password = ctx.request.body.password || '';
+  if (email === 'Lee' && password === '123456') {
+    ctx.render('loginSuccess.html', {
+      title: 'Login Success',
+      name: 'Lee'
+    })
+  } else {
+    ctx.render('loginFailed.html', {
+      title: 'Login Failed'
+    })
+  }
+}
+
 module.exports = {
-  'GET /': fn_index,
-  'POST /signin': fn_signin
+  // 'GET /': fn_index,
+  // 'POST /signin': fn_signin,
+  'POST /login': login,
 };
